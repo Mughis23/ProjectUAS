@@ -54,7 +54,7 @@ public class DaftarBuku extends JFrame implements ActionListener {
                         rs.getString("pengarang"),
                         rs.getString("penerbit"),
                         rs.getString("tahun_terbit"),
-                        rs.getInt("kategori_id")
+                        String.valueOf(rs.getInt("kategori_id"))
                 });
             }
         } catch (SQLException e) {
